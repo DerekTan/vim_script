@@ -1,0 +1,8 @@
+let LINES_PER_FILE=10
+let i=1
+let alist = getline((i-1)*LINES_PER_FILE+1, i*LINES_PER_FILE)
+while !empty(alist)
+    call writefile(alist, i.'.txt')
+    let i+=1
+    let alist = getline((i-1)*LINES_PER_FILE+1, i*LINES_PER_FILE)
+endwhile

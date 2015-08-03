@@ -1,2 +1,2 @@
 # vim_script
-vim scripts collection
+learn and practise vim scripts
